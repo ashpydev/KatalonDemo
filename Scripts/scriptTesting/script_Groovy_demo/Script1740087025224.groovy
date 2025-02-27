@@ -21,11 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.waitForPageLoad(10)
-
-WebUI.navigateToUrl("www.google.com")
-
-WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), GlobalVariable.username)
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), 'admin')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Password_password'), GlobalVariable.password)
 
