@@ -14,21 +14,21 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+//import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.navigateToUrl("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
 WebUI.waitForPageLoad(10)
 
-println "Global Variable Value: " + GlobalVariable.username
-println "Global Variable Value: " + GlobalVariable.password
+// println "Global Variable Value: " + GlobalVariable.username
+// println "Global Variable Value: " + GlobalVariable.password
 
-WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), GlobalVariable.username)
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), "admin")
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Password_password'), GlobalVariable.password)
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Password_password'), "password")
 
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/button_Login'))
 
