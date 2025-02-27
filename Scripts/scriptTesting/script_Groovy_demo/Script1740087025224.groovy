@@ -21,7 +21,9 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(10)
+
+WebUI.navigateToUrl("www.google.com")
 
 WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), GlobalVariable.username)
 
