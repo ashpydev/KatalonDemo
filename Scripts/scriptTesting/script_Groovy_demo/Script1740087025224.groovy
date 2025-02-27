@@ -21,7 +21,12 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), 'admin')
+WebUI.waitForPageLoad(10)
+
+println "Global Variable Value: " + GlobalVariable.username
+println "Global Variable Value: " + GlobalVariable.password
+
+WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), GlobalVariable.username)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Password_password'), GlobalVariable.password)
 
