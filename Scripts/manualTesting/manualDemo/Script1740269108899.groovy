@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('')
+WebUI.navigateToUrl('www.google.com')
 
-WebUI.setText(findTestObject(null), '')
+WebUI.verifyTextPresent('ashman', false)
 
-WebUI.acceptAlert()
+WebUI.closeBrowser()
 
