@@ -13,7 +13,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.setText(findTestObject('Object Repository/Page_OrangeHRM/input_Username_username'), "admin")
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Password_password'), "password")
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_OrangeHRM/input_Password_password'), "hUKwJTbofgPU9eVlw/CnDQ==")
 
 WebUI.click(findTestObject('Object Repository/Page_OrangeHRM/button_Login'))
 
